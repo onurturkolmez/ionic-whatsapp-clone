@@ -1,0 +1,30 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title style="color:white !important;">Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-item style="background-color:transparent !important;">
+    <ion-avatar item-start (click)="show($event,contact);">
+      <ion-text-avatar>
+        <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlVAAAAJGUzMTk1M2FlLWRmOTUtNGMyMC1hMDgwLWQ1NzQ2ZmZjM2NmZQ.jpg"
+        />
+      </ion-text-avatar>
+    </ion-avatar>
+    <ion-label style="font-weight: bold;">
+      <span style="font-size:16px">
+        Onur TÜRKÖLMEZ
+      </span>
+      <p style="color:#ccc;">
+        Available
+      </p>
+    </ion-label>
+  </ion-item>
+  <div class="splitter"></div>
+  <ion-list *ngFor="let item of list">
+    <div class="settingsItems">
+      <ion-icon color="secondLevelGreen" name="{{item.icon}}" class="settingsIcons"></ion-icon>
+      <span class="settingsText">{{item.text}}</span>
+    </div>
+  </ion-list>
+</ion-content>

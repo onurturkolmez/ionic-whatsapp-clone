@@ -1,0 +1,26 @@
+page-status {
+  ion-fab{
+    right: 15px !important;
+  }
+    .firstFab {
+        bottom: 20px !important;
+      }
+      .secondFab{
+        bottom: 85px !important;
+      }
+      .scroll-content{
+        padding-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+      .statusTitleLabel{
+        background: gainsboro !important;
+        margin-left: -16px !important;
+        margin-right: -16px !important;
+        padding-left: 16px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+      .item-md.item-block .item-inner{
+        border-bottom:0 !important; 
+      }
+}

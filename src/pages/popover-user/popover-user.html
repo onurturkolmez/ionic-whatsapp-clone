@@ -1,0 +1,18 @@
+<div (click)="goProfile(user)">
+    <span class="userInfoArea">{{user.name.first | titlecase}} {{user.name.last | titlecase}}</span>
+    <img style="width:100%;" src="{{user.picture.large}}" />
+</div>
+<ion-row color="light" text-center style="padding-top:5px;padding-bottom:5px;">
+    <ion-col col-3>
+        <ion-icon color="firstLevelGreen" name="text"></ion-icon>
+    </ion-col>
+    <ion-col col-3>
+        <ion-icon color="firstLevelGreen" name="call"></ion-icon>
+    </ion-col>
+    <ion-col col-3>
+        <ion-icon color="firstLevelGreen" name="videocam"></ion-icon>
+    </ion-col>
+    <ion-col col-3>
+        <ion-icon color="firstLevelGreen" name="information-circle"></ion-icon>
+    </ion-col>
+</ion-row>

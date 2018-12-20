@@ -1,0 +1,30 @@
+<ion-content padding style="padding-top:0px !important;">
+  <ion-list>
+    <ion-item (click)="goChat(contact)" *ngFor="let contact of contactData" 
+    style="background-color:transparent !important;padding-left:0 !important;margin-left:0 !important;">
+      <ion-avatar item-start (click)="show($event,contact);">
+        <ion-text-avatar>
+          <img src="{{contact.picture.thumbnail}}" />
+        </ion-text-avatar>
+      </ion-avatar>
+      <ion-label style="font-weight: 600;color:#000;">
+        <span style="font-size:16px" text-capitalize>
+          {{contact.name.first}} {{contact.name.last}}
+        </span>
+        <span style="float:right;font-size:12px;opacity: 0.7;">
+          12:30
+        </span>
+
+        <span style="display: flex;margin-top: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck" x="2047" y="2061">
+            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+              fill="#92a58c" />
+          </svg>
+          <span style="opacity: 0.6;font-size: 13px;margin-left: 2px;">
+            Last Message
+          </span>
+        </span>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

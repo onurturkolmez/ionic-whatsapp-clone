@@ -1,0 +1,38 @@
+page-home {
+  .tabbar {
+    bottom: auto !important;
+    background-color: #075e54 !important;
+  }
+  .toolbar-background {
+    background-color: #075e54 !important;
+  }
+  super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .indicator {
+    background-color: #fff !important;
+  }
+
+  .tab-button-text {
+    color: white !important;
+  }
+
+  super-tab-button.title-only.selected {
+    border-bottom: 4px solid #fff;
+  }
+
+  super-tab-button > span.title,
+  super-tab-button > ion-icon {
+    color: white !important;
+  }
+
+  super-tabs-container {
+    height: 100% !important;
+  }
+  ion-fab {
+    right: 15px !important;
+  }
+  .firstFab {
+    bottom: 20px !important;
+  }
+  .secondFab {
+    bottom: 85px !important;
+  }
+}

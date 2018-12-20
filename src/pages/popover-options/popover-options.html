@@ -1,0 +1,9 @@
+<ion-list no-margin>
+    <button ion-item *ngIf="tab==='chat'">New group</button>
+    <button ion-item *ngIf="tab==='chat'">New broadcast</button>
+    <button ion-item *ngIf="tab==='chat'">WhatsApp Web</button>
+    <button ion-item *ngIf="tab==='chat'">Starred messages</button>
+    <button ion-item *ngIf="tab==='call'">Clear call log</button>
+    <button ion-item *ngIf="tab==='status'">Status privacy</button>
+    <button ion-item (click)="go();">Settings</button>
+</ion-list>

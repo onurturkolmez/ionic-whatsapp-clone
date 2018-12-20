@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <ion-navbar color="white">
+    <ion-title style="color:white !important;">
+      WhatsApp
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only cache-view="false">
+        <ion-icon color="white" name="search" item-end></ion-icon>
+      </button>
+      <button ion-button icon-only cache-view="false" (click)="showPopover($event)">
+        <ion-icon color="white" name="more" item-end></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab class="secondFab" *ngIf="tabFabIcon === 'camera'">
+    <button ion-fab icon-only mini color="white">
+      <ion-icon color="dark" name="create"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-fab class="firstFab">
+    <button ion-fab icon-only color="thirdLevelGreen" (click)="openCamera()">
+      <ion-icon color="white" name="{{tabFabIcon}}"></ion-icon>
+    </button>
+  </ion-fab>
+  <super-tabs selectedTabIndex="1" (tabSelect)="onTabSelect($event)" style="height:100% !important;">
+    <super-tab [root]="cameraRoot" icon="camera"></super-tab>
+    <super-tab [root]="chatRoot" title="CHATS"></super-tab>
+    <super-tab [root]="statusRoot" title="STATUS"></super-tab>
+    <super-tab [root]="callRoot" title="CALLS"></super-tab>
+  </super-tabs>
+</ion-content>

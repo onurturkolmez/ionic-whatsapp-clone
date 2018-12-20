@@ -1,0 +1,7 @@
+{
+  "name": "whatsapp-with-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

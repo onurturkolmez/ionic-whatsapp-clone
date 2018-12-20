@@ -1,0 +1,40 @@
+page-settings {
+  .tabbar {
+    bottom: auto !important;
+    background-color: #075e54 !important;
+  }
+  .toolbar-background {
+    background-color: #075e54 !important;
+  }
+  .settingsIcons {
+    font-size: 2em !important;
+  }
+  .settingsText {
+    margin-left: 24px;
+    position: absolute;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .settingsItems {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .splitter {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #ccc;
+    margin-top: 10px;
+  }
+  .item-md.item-block .item-inner {
+    border-bottom: 0 !important;
+  }
+  .bar-button-default-md {
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,54 @@
+<ion-content padding>
+  <ion-item style="padding-left:0px !important;">
+    <ion-avatar item-start>
+      <ion-text-avatar size="1">
+        <img src="https://avatars0.githubusercontent.com/u/16711341?s=460&v=4" />
+      </ion-text-avatar>
+    </ion-avatar>
+    <ion-icon item-left name="add-circle" color="secondLevelGreen" style="margin-bottom:0 !important;margin-left:-29px !important;margin-top:35px !important;"></ion-icon>
+    <ion-label style="font-weight: bold;">
+      <span style="font-size:16px">
+        My status
+      </span>
+      <p style="color:#ccc;">
+        tap to add status update
+      </p>
+    </ion-label>
+  </ion-item>
+  <ion-label color="secondLevelGreen" class="statusTitleLabel">Recent updates</ion-label>
+  <ion-list>
+    <ion-item (click)="showStatus(status);" *ngFor="let status of statusData" style="background-color:transparent !important;padding-left:0 !important;margin-left:0 !important;">
+        <ion-avatar item-start>
+          <ion-text-avatar size="1">
+            <img src="{{status.picture.thumbnail}}" />
+          </ion-text-avatar>
+        </ion-avatar>
+        <ion-label style="font-weight: bold;">
+          <span style="font-size:16px" text-capitalize>
+            {{status.name.first}} {{status.name.last}}
+          </span>
+          <p style="color:#ccc;">
+            12:30
+          </p>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-label color="secondLevelGreen" class="statusTitleLabel">Viewed updates</ion-label>
+  <ion-list>
+    <ion-item (click)="showStatus(status);" *ngFor="let status of statusData" style="background-color:transparent !important;padding-left:0 !important;margin-left:0 !important;">
+        <ion-avatar item-start>
+          <ion-text-avatar size="1">
+            <img src="{{status.picture.thumbnail}}" />
+          </ion-text-avatar>
+        </ion-avatar>
+        <ion-label style="font-weight: bold;">
+          <span style="font-size:16px">
+            {{status.name.first | titlecase}} {{status.name.last | titlecase}}
+          </span>
+          <p style="color:#ccc;">
+            12:30
+          </p>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,10 @@
+{
+  "name": "socket-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "ng-socket-io": "^0.2.4",
+    "socket.io": "^2.0.3"
+  }
+}
